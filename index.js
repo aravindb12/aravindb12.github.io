@@ -1,4 +1,5 @@
 (function () {
+  $('body')[0].style.height = Math.max(document.documentElement.clientHeight, window.innerHeight);
   var scrollContainer = document.getElementsByClassName("scroll-container")[0];
   window.addEventListener(
     "wheel",
