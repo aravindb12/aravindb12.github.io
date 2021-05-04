@@ -34,8 +34,8 @@ a:hover{
 .scroll-container {
   height: 100vh;
   overflow-x: hidden;
-/*   overflow-y: scroll; */
-/*   scroll-snap-type: y mandatory; */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth; 
 }
 section {
@@ -45,7 +45,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-/*   scroll-snap-align: center; */
+  scroll-snap-align: center;
   font-size: 4vmin;
   cursor: default;
 }
