@@ -1,11 +1,9 @@
 (function () {
-  let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+  const rootElement = document.querySelector(".scroll-container")
+const viewPortH = rootElement.getBoundingClientRect().height;
+const windowH = window.innerHeight;
+const browserUiBarsH = viewPortH - windowH;
+rootElement.style.height = `calc(100vh - ${browserUiBarsH}px)`;
    var scrollContainer = document.getElementsByClassName("scroll-container")[0];
 //   window.addEventListener(
 //     "wheel",
