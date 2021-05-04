@@ -1,5 +1,11 @@
 (function () {
-  $('body')[0].style.height = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
   var scrollContainer = document.getElementsByClassName("scroll-container")[0];
   window.addEventListener(
     "wheel",
