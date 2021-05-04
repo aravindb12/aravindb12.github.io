@@ -50,7 +50,7 @@ header a {
   align-items: center;
 }
 .scroll-container {
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -104,7 +104,7 @@ p {
 }
 
 section {
-  height: calc(100vh - 2em);
+  height: calc(100% - 2em);
   max-width: calc(100% - 2em);
   padding: 1em;
   display: flex;
