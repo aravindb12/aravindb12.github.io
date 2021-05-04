@@ -35,8 +35,8 @@ a:hover{
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+/*   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
 }
 section {
   height: calc(100% - 2em);
@@ -45,7 +45,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scroll-snap-align: center;
+/*   scroll-snap-align: center; */
   font-size: 4vmin;
   cursor: default;
 }
