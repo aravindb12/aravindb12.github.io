@@ -34,9 +34,9 @@ a:hover{
 .scroll-container {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
-/*   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; */
+/*   overflow-y: scroll; */
+/*   scroll-snap-type: y mandatory; */
+  scroll-behavior: smooth; 
 }
 section {
   height: calc(100% - 2em);
