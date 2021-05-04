@@ -9,89 +9,60 @@
   </head>
   <body>
     <header>
-      <div class="floating-shapes square"></div>
-      <div class="floating-shapes circle"></div>
-      <div class="floating-shapes rectangle"></div>
       <a class="name" href="./">AB.</a>
-      <div id="contact-icon">
-        <a href="mailto:aravindsbaskaran@gmail.com" target="_blank">
-          <img src="./svg/email.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/aravindb12/"
-        target="_blank"
-        title="LinkedIn profile"
-        ><img src="/svg/linkedin logo.svg"></a
-        >
-      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="scroll-container">
         <section id="intro">
-          <div id="intro-content" class="content-container">
-            <span id="greetings">Hey, I'm </span>
+          <div class="intro content-container">
+            <span class="mini-text">Hey, I'm </span>
             <h1>Aravind Baskaran.</h1>
-            <h2>I build things for Web</h2>
+            <h2>I <span> build </span>things for Web</h2>
           </div>
-          <span class="page-link">
-            More <a id="a1" href="#about">About</a> Me</span
-            >
-          </section>
-          <section id="about">
-            <div id="about-content" class="content-container">
-              <h2>About Me</h2>
-              <p>
-                Hello! My name is Aravind blah blah blah blah blah blah blah blah
-                blah blah blah blah .
-              </p>
-              <p>
-                blah blah blah blah blah blah blah blah blah blah blah blah blah
-                blah blah blah blah blah blah blah blah blah blah blah blah blah
-                blah blah blah blah blah blah blah blah blah blah blah blah blah
-                blah blah blah blah blah blah blah blah blah.
-              </p>
-              <span>Download My&nbsp;<a href="./" target="_blank" title="Download resume">Resume</a></span>
-            <p>Here are the few technologies I have been working on recently</p>
-            <ul>
-              <li>javascript ES6+</li>
-              <li>React JS</li>
-              <li>Next JS</li>
-              <li>vercel</li>
-            </ul>
+          <div class="scroll">
+            <div class="scroll-msg">Scroll down</div>
+            <div class="vertical-line"></div>
           </div>
-          <span class="page-link">
-            <a href="#projects">Things</a> I have built</span
-          >
+        </section>
+        <section id="about">
+          <div class="content-container">
+            <h2>About Me</h2>
+          </div>
         </section>
         <section id="projects">
-          <div id="projects-content" class="content-container">
+          <div class="content-container">
             <h2>Independent Projects</h2>
           </div>
-          <span class="page-link"><a href="#contact">Get In Touch</a></span>
         </section>
         <section id="contact">
-          <div id="contact-content" class="content-container">
-            <h2>Contact Me</h2>
-            <div id="contact-links">
-              <div>Hey there! I'm always up for a chat.</div>
-              <div>
-                Drop me an email to
-                <a href="mailto:aravindsbaskaran@gmail.com" target="_blank">
-                  aravindsbaskaran"at"gmail"dot"com</a
-                  aravindsbaskaran"at"gmail"dot"com</a
-                >
+          <div class="content-container">
+            <h2>Get In Touch.</h2>
+            <div id="contact-details" class="details">
+              <div class="contact-child">
+                <p>
+                  <a href="mailto:aravindsbaskaran@gmail.com" target="_blank">
+                    dev.aravindb@gmail.com</a
+                  ><br />
+                  <a
+                    href="https://www.linkedin.com/in/aravindb12/"
+                    target="_blank"
+                    title="LinkedIn profile"
+                    >LinkedIn</a
+                  >
+                </p>
               </div>
-              <div>
-                or connect with me on
-                <a
-                  href="https://www.linkedin.com/in/aravindb12/"
-                  target="_blank"
-                  title="LinkedIn profile"
-                  >LinkedIn</a
-                >
+              <div class="contact-child">
+                <img class="close black" src="/svg/avataaars_black.svg" alt="" />
               </div>
             </div>
           </div>
-          <span class="page-link"><a href="#intro">Home</a></span>
         </section>
       </div>
     </main>
