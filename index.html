@@ -3,13 +3,21 @@
   <head>
     <title>Aravind Baskaran</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
     <script defer src="index.js"></script>
   </head>
   <body>
     <header>
-      <a class="name" href="./">AB.</a>
       <nav class="nav-bar">
         <ul>
           <li><a href="#about">About</a></li>
@@ -22,10 +30,22 @@
       <div class="scroll-container">
         <section id="intro">
           <div class="intro content-container">
-            <span class="mini-text">Hey, I'm </span>
-            <h1>Aravind Baskaran.</h1>
-            <h2>I <span> build </span>things for Web</h2>
+            <h1>
+              Hello.<br />
+              I am Aravind
+            </h1>
+            <h2>I <span class="stroke"> build </span>things for Web</h2>
           </div>
+          <div class="status">
+            <h2>
+              <span id="date" class="stroke"></span>
+              <div>
+                <span id="month"></span>
+                <span id="seeking">open for opportunities</span>
+              </div>
+            </h2>
+          </div>
+          <div class="mode">Light</div>
           <div class="scroll">
             <div class="scroll-msg">Scroll down</div>
             <div class="vertical-line"></div>
@@ -33,12 +53,29 @@
         </section>
         <section id="about">
           <div class="content-container">
-            <h2>About Me</h2>
+            <h2>About Me.</h2>
+            <p>
+              blah blah blahblahblahblah blahblah blah blah blah blah
+              blahblahblahblah blahblah blah blah blah blah blahblahblahblah
+              blahblah blah blah
+            </p>
+            <p>
+              blah blah blahblahblahblah blahblah blah blah blah blah
+              blahblahblahblah blahblah blah blah blah blah blahblahblahblah
+              blahblah blah blah blah blah blahblahblahblah blahblah blah blah
+              blah blah blahblahblahblah blahblah blah blah blah blah
+              blahblahblahblah blahblah blah blah
+            </p>
+            <p>
+              blah blah blahblahblahblah blahblah blah blah blah blah
+              blahblahblahblah blahblah blah blah blah blah blahblahblahblah
+              blahblah blah blah
+            </p>
           </div>
         </section>
         <section id="projects">
           <div class="content-container">
-            <h2>Independent Projects</h2>
+            <h2>Things I have built.</h2>
           </div>
         </section>
         <section id="contact">
@@ -47,22 +84,24 @@
             <div id="contact-details" class="details">
               <div class="contact-child">
                 <p>
-                  <a href="mailto:aravindsbaskaran@gmail.com" target="_blank">
-                    dev.aravindb@gmail.com</a
-                  ><br />
-                  <a
-                    href="https://www.linkedin.com/in/aravindb12/"
-                    target="_blank"
-                    title="LinkedIn profile"
-                    >LinkedIn</a
-                  >
+                  Hey There! Wanna connect with me? <br />I'm always up for a
+                  chat!<br />
+                  <span>Let's talk.</span>
                 </p>
               </div>
               <div class="contact-child">
-                <img class="close black" src="/svg/avataaars_black.svg" alt="" />
+                <a href="mailto:dev.aravindb@gmail.com" target="_blank">
+                  dev.aravindb@gmail.com</a
+                ><br />
+                <a
+                  href="https://www.linkedin.com/in/aravindb12/"
+                  target="_blank"
+                  >linkedin</a
+                >
               </div>
             </div>
           </div>
+          <div class="totop"><a href="#intro">back to top</a></div>
         </section>
       </div>
     </main>
