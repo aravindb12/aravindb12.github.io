@@ -195,6 +195,9 @@ main {
   .scroll-btn {
     margin-right: 5vw;
   }
+  .sidebar{
+    overflow-y: scroll;
+  }
   .cursor {
     display: none;
   }
