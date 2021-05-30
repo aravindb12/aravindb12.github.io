@@ -225,6 +225,7 @@ footer .link {
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 100vh;
 }
 
 ::-webkit-scrollbar-track {
