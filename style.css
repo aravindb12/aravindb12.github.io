@@ -216,6 +216,7 @@ main {
 }
 footer .link {
   font-size: small;
+  float: unset;
 }
 /* scrollbar styling */
 .project-scroller::-webkit-scrollbar {
