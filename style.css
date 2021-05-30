@@ -129,7 +129,7 @@ main {
   grid-template-rows: auto 1fr auto;
   overflow-y: auto;
   z-index: 2;
-  min-height: max-content;
+  height: 100vh;
   -webkit-overflow-scrolling: touch;
 }
 .sidebar > div:not(:first-child) {

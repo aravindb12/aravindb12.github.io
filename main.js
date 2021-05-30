@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const rootElement = document.getElementById("land");
-  function getActualHeight() {
-    const viewPortH = rootElement.getBoundingClientRect().height;
+  function getActualHeight(elem) {
+    const viewPortH = elem.getBoundingClientRect().height;
     const windowH = window.innerHeight;
     return Math.abs(viewPortH - windowH);
   }
-  rootElement.style.height = `calc(100vh - ${getActualHeight()}px)`;
+  const rootElement = document.getElementById("land");
+  rootElement.style.height = `calc(100vh - ${getActualHeight(rootElement)}px)`;
 
   document.querySelectorAll("[data-toggle-sidebar]").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (sidebarElement) {
         let sidebarState = sidebarElement.getAttribute("aria-hidden");
         sidebarElement.setAttribute("aria-hidden", sidebarState ? false : true);
-        sidebarElement.style.height = `calc(100vh - ${getActualHeight()}px)`;
+        sidebarElement.style.height = `calc(100vh - ${getActualHeight(
+          sidebarElement
+        )}px)`;
         document.querySelector("body").classList.add("side-active");
       }
     });
