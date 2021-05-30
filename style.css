@@ -10,7 +10,6 @@ body {
 body > div {
   width: 100vw;
   display: none;
-  z-index: -1;
   height: 100%;
 }
 .initial {
@@ -84,6 +83,7 @@ main {
   overflow-y: hidden;
   display: flex;
   -webkit-overflow-scrolling: touch;
+  z-index: 1;
 }
 .project-scroller::after {
   content: "projects";
@@ -97,8 +97,6 @@ main {
   scroll-snap-align: center;
   min-width: 100%;
   min-height: 100%;
-  background-color: #e7e7e7;
-  z-index: 1;
 }
 .projects__item:last-of-type {
   margin-right: 0;
