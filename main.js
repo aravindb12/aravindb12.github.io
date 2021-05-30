@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var browserUiBarsH;
+  const rootElement = document.querySelector("body");
+  function getActualHeight() {
+    const viewPortH = rootElement.getBoundingClientRect().height;
+    const windowH = window.innerHeight;
+    return (browserUiBarsH = viewPortH - windowH);
+  }
+  rootElement.style.height = `calc(100vh - ${getActualHeight()}px)`;
+
   document.querySelectorAll("[data-toggle-sidebar]").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       const sidebarID = toggle.dataset.toggleSidebar;
@@ -66,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     divs[counter].classList.add("show");
     counter += 1;
 
-    if (counter === divs.length) {
+    if (counter === divs.length - 1) {
       window.clearInterval(interval);
     }
   }, 2000);
