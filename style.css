@@ -130,6 +130,7 @@ main {
   overflow-y: auto;
   z-index: 2;
   height: 100vh;
+  -webkit-overflow-scrolling: touch;
 }
 .sidebar > div:not(:first-child) {
   margin: 0 15rem 2rem 15rem;
