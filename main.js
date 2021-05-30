@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (sidebarElement) {
         let sidebarState = sidebarElement.getAttribute("aria-hidden");
         sidebarElement.setAttribute("aria-hidden", sidebarState ? false : true);
+        sidebarElement.style.height = `calc(100vh - ${getActualHeight()}px)`;
         document.querySelector("body").classList.add("side-active");
       }
     });
