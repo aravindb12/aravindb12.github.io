@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll(".sidebar__close").forEach((close) => {
     close.addEventListener("click", (e) => {
-      e.currentTarget.parentElement.setAttribute("aria-hidden", true);
+      let sidebar = e.currentTarget.parentElement;
+      sidebar.setAttribute("aria-hidden", true);
+      sidebar.style.height = `calc(100vh - ${getActualHeight(sidebar)}px)`;
     });
   });
 
