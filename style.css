@@ -3,6 +3,7 @@ html {
 }
 body {
   margin: 0;
+  height: 100vh;
   font-size: large;
   font-family: "Montserrat", sans-serif;
 }
@@ -10,6 +11,7 @@ body > div {
   width: 100vw;
   display: none;
   z-index: -1;
+  height: 100vh;
 }
 .initial {
   font-weight: bolder;
@@ -131,6 +133,7 @@ main {
   grid-template-rows: auto 1fr auto;
   overflow-y: auto;
   z-index: 2;
+  height: 100%;
 }
 .sidebar > div:not(:first-child) {
   margin: 0 15rem 2rem 15rem;

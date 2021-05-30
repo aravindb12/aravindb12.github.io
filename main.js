@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var browserUiBarsH;
-  const rootElement = document.querySelector("body");
+  const rootElement = document.getElementById("land");
   function getActualHeight() {
     const viewPortH = rootElement.getBoundingClientRect().height;
     const windowH = window.innerHeight;
-    return (browserUiBarsH = viewPortH - windowH);
+    return Math.abs(viewPortH - windowH);
   }
   rootElement.style.height = `calc(100vh - ${getActualHeight()}px)`;
 
@@ -65,8 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   }
-  const top_level_div = document.getElementById("land");
-  const divs = top_level_div.children;
+  const divs = rootElement.children;
   var counter = 0;
   const interval = window.setInterval(function () {
     if (divs[counter - 1]) {
@@ -76,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     divs[counter].classList.add("show");
     counter += 1;
 
-    if (counter === divs.length) {
+    if (counter === divs.length - 1) {
       window.clearInterval(interval);
     }
   }, 2000);
