@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         sidebarElement.style.height = `calc(100vh - ${getActualHeight(
           sidebarElement
         )}px)`;
-        document.querySelector("body").classList.add("side-active");
       }
     });
   });
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".sidebar__close").forEach((close) => {
     close.addEventListener("click", (e) => {
       e.currentTarget.parentElement.setAttribute("aria-hidden", true);
-      document.querySelector("body").classList.remove("side-active");
     });
   });
 
