@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     divs[counter].classList.add("show");
     counter += 1;
 
-    if (counter === divs.length - 1) {
+    if (counter === divs.length) {
       window.clearInterval(interval);
     }
   }, 2000);
