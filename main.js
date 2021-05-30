@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   rootElement.style.height = `calc(100vh - ${getActualHeight(rootElement)}px)`;
 
   const about = document.getElementById("about_sidebar");
-  sidebarElement.style.height = `calc(100vh - ${getActualHeight(about)}px)`;
+  about.style.height = `calc(100vh - ${getActualHeight(about)}px)`;
   document.querySelectorAll("[data-toggle-sidebar]").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       const sidebarID = toggle.dataset.toggleSidebar;
