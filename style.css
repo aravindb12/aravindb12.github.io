@@ -129,7 +129,7 @@ main {
   grid-template-rows: auto 1fr auto;
   overflow-y: auto;
   z-index: 2;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-overflow-scrolling: touch;
 }
 .sidebar > div:not(:first-child) {
@@ -225,7 +225,6 @@ footer .link {
 }
 ::-webkit-scrollbar {
   width: 5px;
-  height: 100vh;
 }
 
 ::-webkit-scrollbar-track {
