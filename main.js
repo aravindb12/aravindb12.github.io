@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const rootElement = document.getElementById("land");
   rootElement.style.height = `calc(100vh - ${getActualHeight(rootElement)}px)`;
 
+  const about = document.getElementById("about_sidebar");
+  sidebarElement.style.height = `calc(100vh - ${getActualHeight(about)}px)`;
   document.querySelectorAll("[data-toggle-sidebar]").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       const sidebarID = toggle.dataset.toggleSidebar;
@@ -16,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (sidebarElement) {
         let sidebarState = sidebarElement.getAttribute("aria-hidden");
         sidebarElement.setAttribute("aria-hidden", sidebarState ? false : true);
-        sidebarElement.style.height = `calc(100vh - ${getActualHeight(
-          sidebarElement
-        )}px)`;
       }
     });
   });
